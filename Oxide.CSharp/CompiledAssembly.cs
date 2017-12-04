@@ -304,12 +304,12 @@ namespace Oxide.Plugins
 
         private static bool IsNamespaceBlacklisted(string fullNamespace)
         {
-            foreach (var namespaceName in BlacklistedNamespaces)
-            {
-                if (!fullNamespace.StartsWith(namespaceName)) continue;
-                if (WhitelistedNamespaces.Any(fullNamespace.StartsWith)) continue;
-                return true;
-            }
+            //foreach (var namespaceName in BlacklistedNamespaces)
+            //{
+            //    if (!fullNamespace.StartsWith(namespaceName)) continue;
+            //    if (WhitelistedNamespaces.Any(fullNamespace.StartsWith)) continue;
+            //    return true;
+            //}
             return false;
         }
     }
